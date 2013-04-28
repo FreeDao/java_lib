@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.airbiquity.hap" android:versionCode="24" android:versionName="1.30-DEV">
+  
+  <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="9" />  
+  
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.BLUETOOTH"/>
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+  <application 
+      android:name="com.airbiquity.hap.A"
+      android:theme="@android:style/Theme.Light.NoTitleBar" 
+      android:icon="@drawable/ic_launcher"
+      android:allowBackup="true" 
+      android:label="@string/app_name">
+      
+    <activity android:name=".ActSplash" >
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    
+
+    <activity android:name=".ActCountry"    />    
+    <activity android:name=".ActGetMisc"    />    
+    <activity android:name=".ActTerms"      />    
+    <activity android:name=".ActWelcome"    />
+    <activity android:name=".ActReg"        />    
+    <activity android:name=".ActSignIn"     />    
+    <activity android:name=".ActHome"       />
+    <activity android:name=".ActHelp"       />
+    <activity android:name=".ActGuestHome"  />
+    <activity android:name=".ActDemoIntro"  />
+    <activity android:name=".ActDemoHome"   />
+    <activity android:name=".ActGetAppList" />  
+    <activity android:name=".ActGetAppIcons"/> 
+    <activity android:name=".ActGetCarList" />
+    <activity android:name=".ActMyApps"     />        
+    <activity android:name=".ActMySubscrs"  /> 
+    <activity android:name=".ActSubInfo"    />
+    <activity android:name=".ActMyCards"    />    
+    <activity android:name=".ActFillAddCar" />
+    <activity android:name=".ActPost"       />
+    <activity android:name=".ActPostDelSub" />
+    <activity android:name=".ActEditCard"   />
+    <activity android:name=".ActMyAccount"  />
+    <activity android:name=".ActAccDetails" />
+    <activity android:name=".ActPayBil"     />
+    <activity android:name=".ActMsg"        />    
+    <activity android:name=".ActSettings"   />
+    <activity android:name=".ActIsOwner"  android:theme="@android:style/Theme.Dialog" android:excludeFromRecents="true" />
+    
+    
+    <activity android:name=".ActDemoVideo" android:configChanges="keyboardHidden|orientation" />
+
+
+    <service android:name=".HapService">
+           <intent-filter>
+               <!-- These are the interfaces supported by the service, which you can bind to. -->
+               <action android:name="com.airbiquity.hap.IHandsetApplicationProxy" />
+
+               <!--  This is the main service that gets started at device bootup -->
+               <action android:name="com.airbiquity.hap.AgentService" />
+
+           </intent-filter>
+    </service>
+    
+    <receiver android:name=".BluetoothStateReceiver">
+        <intent-filter>
+            <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>"
+        </intent-filter>
+    </receiver>
+    
+    <receiver android:name="com.airbiquity.application.manager.ApplicationReceiver">
+            
+            <intent-filter >
+                <action android:name="android.intent.action.PACKAGE_ADDED"/> 
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/> 
+                <!--  <action android:name="android.intent.action.PACKAGE_REPLACED"/>--> 
+                <data android:scheme="package" />
+            </intent-filter>
+    </receiver>
+    
+  </application>
+
+</manifest>
+

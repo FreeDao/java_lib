@@ -1,0 +1,160 @@
+<div class="alert_container" id="wrapper_alert">
+    <div id="scroll_alert">
+      <%  altObj.each(function(item, index){%> 
+        <div id="alert_id<%=item.id%>" class="alert_container_item" alertIndex='<%=index%>'>
+         <%   switch (item.alert_type) {
+            case "DRIVER_HRS":%>
+            <div class= "alert_pic">
+              <%  if (item.read == 1) { %>
+                <div class="DRIVER_HRS_read">
+                </div>
+                <%} else { %>
+                <div class="DRIVER_HRS_read DRIVER_HRS_unread">
+                </div>
+                <% } %>
+            </div>
+            <div class="alert_container_item_name">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.driving_hours %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_timestamp">
+                <div class="alert_time_content">
+                    <div class="alert_time_content_month">
+                        <%=(item.timestamp>todayTimeStamp)?(t.messages.today):(util.timeToDate(item.timestamp, "MM/dd/yy")) %>
+                    </div>
+                    <div class="alert_time_content_minute">
+                        <%=util.timeToDate(item.timestamp, "hh:mm") %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_detail">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.dht_text_to_speach %>
+                    </div>
+                </div>
+            </div>
+         <%   break;
+            case "PTO":%>
+            <div class= "alert_pic">
+              <%  if (item.read == 1) { %>
+                <div class="PTO_read">
+                </div>
+                <%} else { %>
+                <div class="PTO_read PTO_unread">
+                </div>
+                <% } %>
+            </div>
+            <div class="alert_container_item_name">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.power_take_off %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_timestamp">
+                <div class="alert_time_content">
+                    <div class="alert_time_content_month">
+                        <%=(item.timestamp>todayTimeStamp)?(t.messages.today):(util.timeToDate(item.timestamp, "MM/dd/yy")) %>
+                    </div>
+                    <div class="alert_time_content_minute">
+                        <%=util.timeToDate(item.timestamp, "hh:mm") %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_detail">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.duration %>:&nbsp;<%=util.sendsToTime(item.duration) %>
+                    </div>
+                </div>
+            </div>
+          <%  break;
+            case "IDLING":%>
+            <div class= "alert_pic">
+               <% if (item.read == 1) { %>
+                <div class="IDLING_read">
+                </div>
+                <%} else { %>
+                <div class="IDLING_read IDLING_unread">
+                </div>
+                <% } %>
+            </div>
+            <div class="alert_container_item_name">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.idling %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_timestamp">
+                <div class="alert_time_content">
+                    <div class="alert_time_content_month">
+                        <%=(item.timestamp>todayTimeStamp)?(t.messages.today):(util.timeToDate(item.timestamp, "MM/dd/yy")) %>
+                    </div>
+                    <div class="alert_time_content_minute">
+                        <%=util.timeToDate(item.timestamp, "hh:mm") %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_detail">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                    <p>
+                        <%=t.alerts.duration %>:&nbsp;<%=util.sendsToTime(item.duration) %>
+                    </p>
+                    </div>
+                </div>
+            </div>
+           <% break;
+            case "SPEEDING":%>
+            <div class= "alert_pic">
+                if (item.read == 1) { %>
+                <div class="SPEEDING_read">
+                </div>
+                <%} else { %>
+                <div class="SPEEDING_read SPEEDING_unread">
+                </div>
+                
+                <% } %>
+            </div>
+            <div class="alert_container_item_name">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.speeding %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_timestamp">
+                <div class="alert_time_content">
+                    <div class="alert_time_content_month">
+                        <%=(item.timestamp>todayTimeStamp)?(t.messages.today):(util.timeToDate(item.timestamp, "MM/dd/yy")) %>
+                    </div>
+                    <div class="alert_time_content_minute">
+                        <%=util.timeToDate(item.timestamp, "hh:mm") %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_detail">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <p>
+                        <%=t.alerts.speed_detected %>:&nbsp;<%=item.max_speed %>&nbsp;kph
+                    </p>
+                    <p>
+                        <%=t.alerts.distanceTravelled %>:&nbsp;<%=item.distance_travelled %>&nbsp;km
+                    </p>
+                    </div>
+                </div>
+            </div>
+          <%  break;
+          default:
+                    break;
+          } }%>
+        </div>
+      <%  }%>
+    </div>
+</div>

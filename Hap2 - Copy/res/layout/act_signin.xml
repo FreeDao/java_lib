@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-level content view for the layout fragment sample. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/frag_header"
+        android:name="com.airbiquity.hap.FragAppHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" tools:layout="@layout/frag_app_header"/>
+
+    <!-- Main Layout -->
+    <LinearLayout
+        android:id="@+id/v_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">    
+
+        <!-- Confirm Location -->
+        <TextView 
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            />
+    
+        <!-- Email/ID and password -->
+        <EditText
+            android:id="@+id/editEmail"
+            style="@style/TxtEdit"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your email or user ID here" />
+    
+        <EditText
+            android:id="@+id/editPswrd"
+            style="@style/TxtEdit"
+            android:hint="Enter your password here"
+            android:inputType="textPassword"
+            />
+            
+        <!-- Sign In -->
+        <Button
+            android:id="@+id/btnSignIn"
+            style="@style/BtnGray"
+            android:onClick="btnSignIn"            
+            android:text="@string/sign_in" />
+    
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Forgot Password"
+            android:textColor="@drawable/blue"
+            android:textSize="14dp" />
+    
+    </LinearLayout>
+    
+    <!-- Progress layout -->
+    <RelativeLayout
+        android:id="@+id/v_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+android:id/progress_large"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center" />
+    </RelativeLayout>
+    
+    <!-- Error layout -->
+    <LinearLayout
+        android:id="@+id/v_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/err_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnOk"
+            style="@style/BtnGray"
+            android:onClick="btnOk"            
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</LinearLayout>

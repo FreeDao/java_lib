@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+ <!--
+function InitScrollBar(txtBox,txtContent,txtTrack,txtHandle,vHeight){
+    //对象初始化
+    var ObjScroll = new Object();
+    ObjScroll.MaxScroll = vHeight;
+    ObjScroll.ScrollBox = document.getElementById(txtBox);
+ ObjScroll.ScrollContent = document.getElementById(txtContent);
+ ObjScroll.ScrollTrack = document.getElementById(txtTrack);
+ ObjScroll.ScrollHandle = document.getElementById(txtHandle);
+ //对象不存在
+    if(!(ObjScroll.ScrollBox && ObjScroll.ScrollContent && ObjScroll.ScrollTrack  && ObjScroll.ScrollHandle)){
+        ObjScroll.ScrollTrack.style.display = "none";
+        return;
+    }
+    //初始化元件高度、位置
+ ObjScroll.ScrollAmount = ObjScroll.ScrollContent.offsetHeight/ObjScroll.MaxScroll;
+ if(ObjScroll.ScrollAmount>1){
+  ObjScroll.ScrollHandle.onmousedown = function(e){
+      if (!e)
+            e = window.event;
+      beginDrag(e);
+  }
+  if(document.all){
+      ObjScroll.ScrollContent.onmousewheel = function(){wheelScroll(event);}
+  }
+  else{
+      ObjScroll.ScrollContent.addEventListener("DOMMouseScroll", wheelScroll, false); 
+  }
+  ObjScroll.ScrollTrack.style.height = ObjScroll.MaxScroll+2 + "px";
+  ObjScroll.ScrollBox.style.height = ObjScroll.MaxScroll + "px"; 
+  ObjScroll.ScrollHandle.style.marginTop = "0px";
+  ObjScroll.ScrollHandle.style.height = Math.floor(ObjScroll.MaxScroll/ObjScroll.ScrollAmount) + "px";
+  ObjScroll.MaxLength =  ObjScroll.MaxScroll - Math.floor(ObjScroll.MaxScroll/ObjScroll.ScrollAmount);
+     
+ }
+ else{
+  ObjScroll.ScrollTrack.style.display = "none";
+ }
+ //鼠标滚轮事件
+ function wheelScroll(event){ 
+     var wAmount = event.wheelDelta;
+     if(!wAmount) wAmount = -event.detail*40;     
+     ObjScroll.ScrollBox.scrollTop -= wAmount/12;
+     if(ObjScroll.ScrollBox.scrollTop == 0) {
+         ObjScroll.ScrollHandle.style.marginTop = "0px";
+     }
+     else if(ObjScroll.ScrollBox.scrollTop == ObjScroll.ScrollContent.offsetHeight - ObjScroll.MaxScroll){
+         ObjScroll.ScrollHandle.style.marginTop = ObjScroll.MaxLength +"px";
+     }
+     else{
+         ObjScroll.ScrollHandle.style.marginTop = parseInt(ObjScroll.ScrollHandle.style.marginTop) - Math.floor(wAmount/(12*ObjScroll.ScrollAmount)) + "px";
+     }
+     if(parseInt(ObjScroll.ScrollHandle.style.marginTop) > ObjScroll.MaxLength) ObjScroll.ScrollHandle.style.marginTop = ObjScroll.MaxLength +"px";
+ }
+ //拖动滚动条事件
+ function beginDrag(event) {
+        var deltaY = event.clientY - parseInt(ObjScroll.ScrollHandle.style.marginTop);        
+        document.onmousemove = moveHandler;
+        document.onmouseup = upHandler;
+     document.onmouseout = outHandler;  
+     if(document.all) ObjScroll.ScrollHandle.setCapture();
+        //鼠标拖动事件
+        function moveHandler(e) {
+            if (!e)
+            e = window.event;
+            ObjScroll.ScrollHandle.style.marginTop = (e.clientY - deltaY) + "px";
+            if((e.clientY - deltaY)<0)
+      {ObjScroll.ScrollHandle.style.marginTop = 0 +"px";}
+            else if((e.clientY - deltaY)>ObjScroll.MaxLength){ObjScroll.ScrollHandle.style.marginTop = ObjScroll.MaxLength +"px";}
+      else{
+       ObjScroll.ScrollBox.scrollTop = Math.floor((e.clientY - deltaY ) * ObjScroll.ScrollAmount);   
+      }
+        }
+        //鼠标释放
+        function upHandler(e){
+            if (!e) e = window.event;
+            document.onmouseup = "";
+            document.onmousemove = "";
+      document.onmouseout = "";
+      if(document.all) ObjScroll.ScrollHandle.releaseCapture();
+        }
+     //鼠标移开
+     function outHandler(e){
+            if (!e) e = window.event;        
+            document.onmouseup = "";
+            document.onmousemove = "";
+      document.onmouseout = "";
+      if(document.all) ObjScroll.ScrollHandle.releaseCapture();
+        }
+    }
+}
+-->
+ 
+</script>
+ 
+
+</head>
+<body>
+
+</body>
+</html>

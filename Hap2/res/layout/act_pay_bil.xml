@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-level content view for the layout fragment sample. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/frag_header"
+        android:name="com.airbiquity.hap.FragAppHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" tools:layout="@layout/frag_app_header"/>
+
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />    
+
+
+    <!-- Change Credit Card -->
+    <Button
+        android:id="@+id/btnChangeCreditCard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/change_credit_card" />
+
+    <!-- Previous Transactions -->
+    <Button
+        android:id="@+id/btnPrevTransactions"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="@string/prev_transactions" />
+    
+    <!-- Footer -->
+    <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1" />
+    
+</LinearLayout>

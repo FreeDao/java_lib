@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+	</head>
+	<body>
+		<script language="JavaScript">
+			function Animal(name){
+				console.log("call the constructor.");
+				this.name = name;
+				this.jump = function(){
+					console.log(this.name+" is jumping.");
+				}
+				this.eat = function(){
+					console.log(this.name+" is eatting.");
+				}
+				
+			}
+			function myClass (name){
+				this.name = name;
+			}
+			var cat = new myClass("kate");    
+			console.log(cat.name);
+			
+			var animal = new Animal("mimi");
+			console.log(animal.name);
+			animal.eat();
+			animal.jump();
+			
+			function Dog(){
+			}
+			Dog.prototype = new Animal("sam");
+			
+			var dog =  new Dog();
+			
+		</script>
+	</body>
+</html>

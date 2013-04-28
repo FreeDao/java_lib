@@ -1,0 +1,3 @@
+# setup slip connection
+
+sudo python setupSlip.py

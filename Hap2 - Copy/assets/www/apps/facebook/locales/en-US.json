@@ -1,0 +1,17 @@
+{
+	"news_Feed" : "News Feed",
+	"status" : "Status",
+	"events" : "Events",
+	"nearby_Friends" : "Nearby Friends",
+	"friends" : "Friends",
+	"messages" : "Messages",
+	"check_In" : "Check-In",
+	"post_Confirm" : "Do you want to post: [post_message]?",
+	"check_In_Confirm" : "Do you want to check-in at [location]",
+	"not_Found_Notification" : "No information found... Go back?",
+	"past_Events" : "Past Events",
+	"future_Events" : "Future Events",
+	"birthdays" : "Birthdays",
+	"yes" : "Yes",
+	"no" : "No"
+}

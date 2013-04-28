@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='utf-8'>
+    <meta http-equiv="Content-type" value="text/html; charset=UTF-8">
+
+	<title>AQ</title>
+	<!-- <script type="text/javascript" charset="utf-8" src="aq/jquery-1.7.2.min.js"></script> -->
+	<script type="text/javascript" charset="utf-8" src="lib/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="lib/jquery.jsperanto.js"></script>
+	<script type='text/javascript' charset="utf-8" src='lib/NativeBridge.js'></script>
+</head>
+<body>
+	<!-- Temp for IOS debugging -->
+	<button id='clear'>Clear</button>
+	<p id='log' style='word-wrap:break-word;'></p>
+
+	<script type='text/javascript'>
+		var AQ = {};
+
+		function log(str)
+		{
+		    switch(AQ.hash.platform)
+		    {
+		        case "android":
+		            window.android.log(str)
+		            break;
+
+		        case "ios":
+		            $('#log').append( str +"<hr/>");
+		            break;
+		    }
+		}
+	</script>
+
+	<!-- Order of files is important -->
+	<script src='aq/aqutil.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqapp.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqconstant.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqpolicy.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqresponse.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqstorage.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqtranslator.js' type='text/javascript' charset="utf-8"></script>
+	<script src='aq/aqrequest.js' type='text/javascript' charset="utf-8"></script>
+
+	<script id='app' type='text/javascript' charset="utf-8" ></script>
+	<script src='aq/init.js' type='text/javascript' charset="utf-8" ></script>
+</body>
+</html>

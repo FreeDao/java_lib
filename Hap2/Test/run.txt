@@ -1,0 +1,48 @@
+hcitool scan
+
+# My Droid 2
+sdptool browse CC:8C:E3:28:AB:B0
+sudo rfcomm bind /dev/rfcomm/0 CC:8C:E3:28:AB:B0 14
+
+sudo rfcomm show /dev/rfcomm/0
+sudo rfcomm release /dev/rfcomm/0
+
+sudo slattach -d -p slip /dev/rfcomm0 &
+
+sudo ifconfig sl0 192.168.0.2 dstaddr 192.168.0.3
+ifconfig
+
+python handsetProfile.py
+python socksGet.py
+python getMyStations.py
+python commandControlNoJson.py
+python longPolling.py
+python appDownload.py
+python multipleAppDownload.py
+python pandora.py
+
+ps -ef | grep slattach
+jobs
+
+###########################
+HTC Sensation 4G
+sdptool browse D4:20:6D:04:52:97
+sudo rfcomm bind /dev/rfcomm/0 D4:20:6D:04:52:97 14
+
+###########################
+Galaxy S II
+sdptool browse D0:DF:C7:00:FD:69
+sudo rfcomm bind /dev/rfcomm/0 D0:DF:C7:00:FD:69 14
+
+###########################
+CES 2 DROID
+sdptool browse 40:98:4E:92:7E:87 
+sudo rfcomm bind /dev/rfcomm/0 40:98:4E:92:7E:87 
+
+###########################
+FC:C7:34:0E:29:14	SGH-I777
+sdptool browse FC:C7:34:0E:29:14
+sudo rfcomm bind /dev/rfcomm/0 FC:C7:34:0E:29:14 14
+
+###########################
+38:0A:94:B7:02:85 Galaxy Nexus

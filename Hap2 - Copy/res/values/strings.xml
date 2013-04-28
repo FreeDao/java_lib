@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Infiniti InTouch</string>
+    <string name="none">none</string>
+    <string name="powered_by">Powered by Airbiquity</string>
+    
+
+    <!-- ActWelcome -->
+    <string name="btnTextGuest">Use As Guest</string>    
+    <string name="btnTitleGuest">For quick but limited access</string>
+    <string name="btnTitleSignIn">Already have an account?</string>
+    <string name="btnTitleDemo">Try NissanConnect in any car</string>
+        
+    <!-- Confirm Location -->
+    <string name="choose_country">Select Your Country</string>
+    
+    <!--  BluetoothChat -->
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+
+    <!--  Bluetooth Connection -->
+    <string name="con_yes">Connected</string>
+    <string name="con_no">Disconnected</string>
+    
+    <string name="foreground_service_started">Connected</string>
+    
+    
+    <!--  -->
+    
+    <string name="manage_my_apps">Manage My Apps</string>
+    <string name="manage_my_cars">Manage My Vehicles</string>
+    <string name="manage_my_acc">Manage My Account</string>
+    <string name="sign_in">Login</string>
+    <string name="sign_out">Logout</string>
+    <string name="add_car">Add Vehicle</string>
+    <string name="add_card">Add Credit Cards</string>
+    <string name="acc_settings">Account Settings</string>
+    <string name="pay_bil">Payment &amp; Billing</string>    
+    <string name="acc_create_why">For customizable and premium access</string>
+    <string name="acc_create">Create Account</string>
+    <string name="acc_del">Delete Account</string>
+    <string name="email_or_id">Enter your email or user ID here</string>
+    <string name="pas1">Enter your password here</string>
+    <string name="pas2">Enter your password again</string>
+    <string name="hint_first_name">Enter your first name here</string>
+    <string name="hint_last_name">Enter your last name here</string>    
+    <string name="hint_zip">Enter your postal code here</string>
+    <string name="hint_year">Enter year here</string>
+    <string name="hint_model">Enter model here</string>
+    <string name="hint_nick">Enter nickname here</string>
+    <string name="hint_vin">Enter VIN here</string>
+    <string name="noCars">No items in this list</string>
+        
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="Retry">Retry</string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="AreYouOwner">Are you the owner?</string>
+    <string name="carAdded">Vehicle added</string>
+    <string name="AccountCreated">Account created</string>
+    <string name="subDeleteSent">Request for Vehicle subscription cancelation has been sent.</string>
+    
+    <string name="badYear">Year must have 4 digits</string>
+    <string name="badNick">Nick name cannot be empty</string>
+    <string name="badVin">invalid VIN</string>
+        
+    <string name="myCarSubs">My vehicle subscriptions</string>
+    <string name="basic">basic</string>
+    <string name="premium">premium</string>
+    <string name="notActivated">not activated yet</string>
+    
+    <string name="change_credit_card">Change Credit Card</string>
+    <string name="prev_transactions">Previous Transactions</string>
+    
+    <string name="demo_mode">Demo Mode</string>
+    <string name="watch_demo_video">Watch Demo Video</string>
+    <string name="welcome_to_nissan_connect">Welcome to NissanConnect!</string>
+    <string name="please_watch_video">Please view this video to learn about the app and its features.</string>
+    
+        
+</resources>

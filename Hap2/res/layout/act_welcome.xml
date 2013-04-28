@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-level content view for the layout fragment sample. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/frag_header"
+        android:name="com.airbiquity.hap.FragAppHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" tools:layout="@layout/frag_app_header"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical">
+                
+            <!-- Sign In -->
+            <TextView
+                android:id="@+id/tx2"
+                style="@style/TvCopy"
+                android:text="@string/btnTitleSignIn" />
+        
+            <Button
+                android:id="@+id/btnSignIn"
+                style="@style/BtnGray"
+                android:onClick="btnSignIn"
+                android:text="@string/sign_in" />
+        
+            <!-- Create Account -->
+            <TextView
+                android:id="@+id/tx0"
+                style="@style/TvCopy"
+                android:text="@string/acc_create_why" />
+        
+            <Button
+                android:id="@+id/btnCreateAcc"
+                style="@style/BtnGray"
+                android:onClick="btnCreateAcc"
+                android:text="@string/acc_create" />
+        
+            <!-- Use As Guest -->
+            <TextView
+                android:id="@+id/tx1"
+                style="@style/TvCopy"
+                android:text="@string/btnTitleGuest" />
+        
+            <Button
+                android:id="@+id/btnUseAsGuest"
+                style="@style/BtnGray"
+                android:onClick="btnUseAsGuest"
+                android:text="@string/btnTextGuest" />
+                
+            <!-- Demo Mode -->
+            <TextView
+                android:id="@+id/tx3"        
+                style="@style/TvCopy"
+                android:text="@string/btnTitleDemo" />
+        
+            <Button
+                android:id="@+id/btnDemoMode"
+                style="@style/BtnGray"
+                android:onClick="btnDemoMode"
+                android:text="@string/demo_mode" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

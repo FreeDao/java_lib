@@ -1,0 +1,17 @@
+{
+	"news_Feed" : "新鲜事",
+	"status" : "状态",
+	"events" : "提醒",
+	"nearby_Friends" : "附近的朋友",
+	"friends" : "我的好友",
+	"messages" : "消息",
+	"check_In" : "签到",
+	"post_Confirm" : "你想发送: [post_message]吗？",
+	"check_In_Confirm" : "你确定要在[location]签到吗？",
+	"not_Found_Notification" : "没有找到相关信息... 返回？",
+	"past_Events" : "已过期提醒",
+	"future_Events" : "未来提醒",
+	"birthdays" : "生日提醒",
+	"yes" : "是",
+	"no" : "否"
+}

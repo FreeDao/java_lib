@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+
+#test {
+    width: 200px;
+    height: 200px;
+    background: url('a.png') no-repeat;
+};
+
+#test:active {
+	    width: 500px;
+	 height: 600px;
+    background: url('b.png') no-repeat;
+}

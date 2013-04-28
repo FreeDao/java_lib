@@ -1,0 +1,50 @@
+<div class="alert_container" id="wrapper_alert">
+    <div id="scroll_alert">
+        altObj.each(function(item, index){ 
+        <div id="alert_id<%=item.id%>" class="alert_container_item" alertIndex='<%=index%>'>
+            switch (item.alert_type) {
+            case "DRIVER_HRS":
+            <div class= "alert_pic">
+                if (item.read == 1) { %>
+                <div class="DRIVER_HRS_read">
+                </div>
+                <%} else { %>
+                <div class="DRIVER_HRS_read DRIVER_HRS_unread">
+                </div>
+            </div>
+            <div class="alert_container_item_name">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.driving_hours %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_timestamp">
+                <div class="alert_time_content">
+                    <div class="alert_time_content_month">
+                        <%=(item.timestamp>todayTimeStamp)?(t.messages.today):(util.timeToDate(item.timestamp, "MM/dd/yy")) %>
+                    </div>
+                    <div class="alert_time_content_minute">
+                        <%=util.timeToDate(item.timestamp, "hh:mm") %>
+                    </div>
+                </div>
+            </div>
+            <div class="alert_container_item_detail">
+                <div style="display:table-row;">
+                    <div style="display:table-cell; vertical-align:middle;">
+                        <%=t.alerts.dht_text_to_speach %>
+                    </div>
+                </div>
+            </div>
+            break;
+            case "DRIVER_HRS":
+            break;
+            case "DRIVER_HRS":
+            break;
+            case "DRIVER_HRS":
+            break;
+            }
+        </div>
+        }
+    </div>
+</div>

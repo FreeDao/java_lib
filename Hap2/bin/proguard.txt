@@ -1,0 +1,186 @@
+# view AndroidManifest.xml #generated:83
+-keep class com.airbiquity.application.manager.ApplicationReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:18
+-keep class com.airbiquity.hap.A { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.airbiquity.hap.ActAccDetails { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.airbiquity.hap.ActCountry { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.airbiquity.hap.ActDemoHome { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.airbiquity.hap.ActDemoIntro { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.airbiquity.hap.ActDemoVideo { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.airbiquity.hap.ActEditCard { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.airbiquity.hap.ActFillAddCar { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.airbiquity.hap.ActGetAppIcons { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.airbiquity.hap.ActGetAppList { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.airbiquity.hap.ActGetCarList { <init>(...); }
+
+# view AndroidManifest.xml #generated:34
+-keep class com.airbiquity.hap.ActGetMisc { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.airbiquity.hap.ActGuestHome { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class com.airbiquity.hap.ActHelp { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.airbiquity.hap.ActHome { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.airbiquity.hap.ActIsOwner { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.airbiquity.hap.ActMsg { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.airbiquity.hap.ActMyAccount { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.airbiquity.hap.ActMyApps { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.airbiquity.hap.ActMyCards { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.airbiquity.hap.ActMySubscrs { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.airbiquity.hap.ActPayBil { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.airbiquity.hap.ActPost { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.airbiquity.hap.ActPostDelSub { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.airbiquity.hap.ActReg { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.airbiquity.hap.ActSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.airbiquity.hap.ActSignIn { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.airbiquity.hap.ActSplash { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.airbiquity.hap.ActSubInfo { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class com.airbiquity.hap.ActTerms { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.airbiquity.hap.ActWelcome { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.airbiquity.hap.BluetoothStateReceiver { <init>(...); }
+
+# view res/layout/act_acc_details.xml #generated:9
+# view res/layout/act_country.xml #generated:10
+# view res/layout/act_demo_home.xml #generated:9
+# view res/layout/act_demo_intro.xml #generated:9
+# view res/layout/act_edit_card.xml #generated:8
+# view res/layout/act_fill_add_car.xml #generated:10
+# view res/layout/act_guest_home.xml #generated:9
+# view res/layout/act_home.xml #generated:10
+# view res/layout/act_my_account.xml #generated:9
+# view res/layout/act_my_apps.xml #generated:8
+# view res/layout/act_my_cards.xml #generated:9
+# view res/layout/act_my_subscrs.xml #generated:10
+# view res/layout/act_pay_bil.xml #generated:9
+# view res/layout/act_reg.xml #generated:10
+# view res/layout/act_signin.xml #generated:9
+# view res/layout/act_sub_info.xml #generated:10
+# view res/layout/act_terms.xml #generated:10
+# view res/layout/act_welcome.xml #generated:9
+-keep class com.airbiquity.hap.FragAppHeader { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.airbiquity.hap.HapService { <init>(...); }
+
+# view res/layout/act_demo_video.xml #generated:7
+-keep class com.airbiquity.hap.MyVideoView { <init>(...); }
+
+# onClick res/layout/act_my_subscrs.xml #generated:48
+-keepclassmembers class * { *** btnAddCar(...); }
+
+# onClick res/layout/act_home.xml #generated:53
+-keepclassmembers class * { *** btnClkMangeAcc(...); }
+
+# onClick res/layout/act_home.xml #generated:39
+-keepclassmembers class * { *** btnClkMangeApps(...); }
+
+# onClick res/layout/act_home.xml #generated:46
+-keepclassmembers class * { *** btnClkMangeCars(...); }
+
+# onClick res/layout/act_home.xml #generated:60
+-keepclassmembers class * { *** btnClkSignOut(...); }
+
+# onClick res/layout/act_country.xml #generated:29
+-keepclassmembers class * { *** btnConfirm(...); }
+
+# onClick res/layout/act_welcome.xml #generated:43
+-keepclassmembers class * { *** btnCreateAcc(...); }
+
+# onClick res/layout/act_sub_info.xml #generated:35
+-keepclassmembers class * { *** btnDelete(...); }
+
+# onClick res/layout/act_welcome.xml #generated:67
+-keepclassmembers class * { *** btnDemoMode(...); }
+
+# onClick res/layout/act_is_owner.xml #generated:28
+-keepclassmembers class * { *** btnNo(...); }
+
+# onClick res/layout/act_fill_add_car.xml #generated:53
+# onClick res/layout/act_home.xml #generated:98
+# onClick res/layout/act_msg.xml #generated:23
+# onClick res/layout/act_reg.xml #generated:108
+# onClick res/layout/act_signin.xml #generated:90
+# onClick res/layout/act_terms.xml #generated:24
+-keepclassmembers class * { *** btnOk(...); }
+
+# onClick res/layout/act_reg.xml #generated:71
+-keepclassmembers class * { *** btnReg(...); }
+
+# onClick res/layout/act_get_app_list.xml #generated:39
+# onClick res/layout/act_get_misc.xml #generated:39
+# onClick res/layout/act_net_req.xml #generated:39
+# onClick res/layout/act_splash.xml #generated:59
+# onClick res/layout/act_task.xml #generated:41
+-keepclassmembers class * { *** btnRetry(...); }
+
+# onClick res/layout/act_signin.xml #generated:45
+# onClick res/layout/act_welcome.xml #generated:31
+-keepclassmembers class * { *** btnSignIn(...); }
+
+# onClick res/layout/act_sub_info.xml #generated:29
+-keepclassmembers class * { *** btnUpdate(...); }
+
+# onClick res/layout/act_welcome.xml #generated:55
+-keepclassmembers class * { *** btnUseAsGuest(...); }
+
+# onClick res/layout/act_is_owner.xml #generated:35
+-keepclassmembers class * { *** btnYes(...); }
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top-level content view for the layout fragment sample. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/frag_header"
+        android:name="com.airbiquity.hap.FragAppHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/frag_app_header" />
+
+    <TextView
+        style="@style/TvHeadline"
+        android:text="@string/choose_country"
+        />
+    
+    <ListView
+        android:id="@+id/listCountries"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    
+    <!-- Confirm -->
+    <Button
+        android:id="@+id/btnConfirm"
+        style="@style/BtnGray"
+        android:onClick="btnConfirm"
+        android:text="@android:string/ok" />
+
+</LinearLayout>
