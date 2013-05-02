@@ -1,1 +1,0 @@
-log("EXTERNAL FILE: Test.js is loaded to the DOM!");

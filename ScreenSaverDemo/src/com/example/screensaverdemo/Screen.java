@@ -1,21 +1,30 @@
 package com.example.screensaverdemo;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.Menu;
 
 public class Screen extends Activity {
+	WakeLock wakeLock = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen);
-        Log.d("test", "sam  :"+getScreenOffTime());
+        
+        PowerManager pm = (PowerManager)getSystemService(Context.POWER_SERVICE);
+        wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "Screen");
+        wakeLock.acquire();
+        
+       /* Log.d("test", "sam  :"+getScreenOffTime());
         setScreenOffTime(15000);
         System.out.println("samm dd : "+getScreenOffTime());
-        Log.d("test", "sam  :"+getScreenOffTime());
+        Log.d("test", "sam  :"+getScreenOffTime());*/
     }
 
     @Override
@@ -45,7 +54,7 @@ public class Screen extends Activity {
         return screenOffTime;
       }
 
-
+    
 
     
 }

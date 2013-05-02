@@ -2,6 +2,7 @@ package com.sam.handlerdemo;
 
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -40,14 +41,32 @@ public class MainActivity extends Activity {
 		public void onClick(View v) {
 			handler.removeCallbacks(updateThread);
 		}}
+	Handler handler = new Handler(){
+
+		@Override
+		public void handleMessage(Message msg) {
+			// TODO Auto-generated method stub
+			System.out.println("------msg.what = "+msg.what);
+			super.handleMessage(msg);
+			
+			
+		}
+		
+	};
 	
-	Handler handler = new Handler();
+	
+	
 	Runnable updateThread = new Runnable(){
 
 		@Override
 		public void run() {
 			// TODO Auto-generated method stub
-			System.out.println("sam  -----update thread");
+			System.out.println("sam  -----update thread ");
+//			handler.postDelayed(updateThread, 1000);
+			
+			Message msg = handler.obtainMessage();
+			msg.what = 1;
+			handler.sendMessage(msg);
 			handler.postDelayed(updateThread, 1000);
 		}
 		
