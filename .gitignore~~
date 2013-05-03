@@ -1,0 +1,36 @@
+*/bin
+InfinitiInTouch/gen
+InfinitiInTouch/doc
+*.metadata
+InfinitiInTouch/hist.txt
+InfinitiInTouch/bin/jarlist.cache
+InfinitiInTouch/Test/httplib2
+InfinitiInTouch/Test/socks
+InfinitiInTouch/Test/tmp*.txt
+InfinitiInTouch/Test/*.zip
+InfinitiInTouch/proguard
+
+*.project
+*.pydevproject
+InfinitiInTouch/.settings
+HapJarable
+TestHapJar
+
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
