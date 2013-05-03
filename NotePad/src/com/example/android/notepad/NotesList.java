@@ -73,7 +73,7 @@ public class NotesList extends ListActivity {
         super.onCreate(savedInstanceState);
 
         // The user does not need to hold down the key to use menu shortcuts.
-        setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);
+        (DEFAULT_KEYS_SHORTCUT);
 
         /* If no data is given in the Intent that started this Activity, then this Activity
          * was started when the intent filter matched a MAIN action. We should use the default
