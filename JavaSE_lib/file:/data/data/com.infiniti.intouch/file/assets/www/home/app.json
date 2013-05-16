@@ -1,0 +1,8 @@
+{
+    "appName" : "Home",
+    "folder" : "home",
+    "files" : ["app.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "Home",
+    "locales" : false
+}

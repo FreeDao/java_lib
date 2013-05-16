@@ -127,11 +127,13 @@ public class SnakeView extends TileView {
      */
     public SnakeView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        Log.i(TAG, "-----------construct SnakeView-------002------");
         initSnakeView();
    }
 
     public SnakeView(Context context, AttributeSet attrs, int defStyle) {
     	super(context, attrs, defStyle);
+    	Log.i(TAG, "-----------construct SnakeView-------003------");
     	initSnakeView();
     }
 
@@ -257,7 +259,7 @@ public class SnakeView extends TileView {
      */
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent msg) {
-
+    	Log.i(TAG, "-----------------keycode: "+keyCode);
         if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
             if (mMode == READY | mMode == LOSE) {
                 /*
@@ -367,6 +369,9 @@ public class SnakeView extends TileView {
             // Choose a new location for our apple
             int newX = 1 + RNG.nextInt(mXTileCount - 2);
             int newY = 1 + RNG.nextInt(mYTileCount - 2);
+        	
+        	
+        	
             newCoord = new Coordinate(newX, newY);
 
             // Make sure it's not already under the snake

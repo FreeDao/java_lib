@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ffffffff" >
+    
+    <RelativeLayout 
+        android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:paddingLeft="50dip"
+	    android:layout_weight="1"
+	    android:gravity="center_horizontal"
+        >
+        <RelativeLayout 
+            android:id="@+id/gap"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="20dip"
+	    	
+            />
+            <Button 
+               android:id="@+id/start_btn"
+	    	android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/gap"
+	    	android:text="start game" 
+                />
+            <Button
+	    	android:id="@+id/choice_btn"
+	    	android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/start_btn"
+	    	android:text="choose map"
+	    	/>
+            <Button
+	    	android:id="@+id/arrange_btn"
+	    	android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/choice_btn"
+	    	android:text="排行榜"
+	    	/>
+	    <Button
+	    	android:id="@+id/help_btn"
+	    	android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/arrange_btn"
+	    	android:text="帮助"
+	    	/>
+	    <Button
+	    	android:id="@+id/about_btn"
+	    	android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/help_btn"
+	    	android:text="关于"
+	    	/>
+	    <Button
+	    	android:id="@+id/exit_btn"
+	    	android:layout_width="150dip"
+	    	android:layout_height="wrap_content"
+	    	android:layout_below="@id/about_btn"
+	    	android:text="退出游戏"
+	    	/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

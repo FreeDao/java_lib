@@ -1,0 +1,8 @@
+{
+    "appName" : "Template Testing Suite",
+    "folder" : "test_suite",
+    "files" : ["app.js", "constants.js", "generator.js", "generator_api.js", "generator_transitions.js", "generator_general_screens.js", "generator_templates.js", "generator_template_a_1.js", "generator_template_a_2.js", "generator_template_a_3.js", "generator_template_b.js", "generator_template_c.js", "generator_template_d.js", "generator_template_e.js", "generator_template_f.js", "generator_template_g_1.js", "generator_template_g_2.js", "generator_template_g_3.js", "generator_template_h.js", "generator_template_j.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "Test_suite",
+    "locales" : false
+}

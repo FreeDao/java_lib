@@ -1,0 +1,8 @@
+{
+    "appName" : "Audio Tester",
+    "folder" : "audio_tester",
+    "files" : ["app.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "Audio_tester",
+    "locales" : false
+}

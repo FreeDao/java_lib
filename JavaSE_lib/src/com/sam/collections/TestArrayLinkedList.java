@@ -17,6 +17,10 @@ public class TestArrayLinkedList {
 		arraylist.add(5);
 		arraylist.add(3);
 		System.out.println(arraylist);
+		
+		System.out.println(arraylist.toArray()[0]);
+		//toArray()和Arrays.asList()  集合转数组 数组转集合
+		
 	}
 
 }

@@ -1,0 +1,9 @@
+{
+    "appName" : "Facebook",
+    "folderName" : "facebook",
+    "files" : ["app.js", "util.js", "cache.js", "constants.js", "generator.js", "model.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "Facebook",
+    "locales" : true,
+    "localesFolder" : "locales"
+}

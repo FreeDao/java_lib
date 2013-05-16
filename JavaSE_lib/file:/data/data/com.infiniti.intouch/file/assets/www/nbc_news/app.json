@@ -1,0 +1,9 @@
+{
+    "appName" : "NBC News",
+    "folderName" : "nbc_news",
+    "files" : ["app.js", "constants.js", "generator.js", "model.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "NBC_news",
+    "locales" : true,
+    "localesFolder" : "locales"
+}

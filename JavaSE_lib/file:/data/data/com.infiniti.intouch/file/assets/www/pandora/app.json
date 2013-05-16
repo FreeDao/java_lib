@@ -1,0 +1,9 @@
+{
+    "appName" : "Pandora",
+    "folderName" : "pandora",
+    "files" : ["app.js", "constants.js", "generator.js", "callbackobjects.js", "model.js", "PandoraLink.js", "cache.js", "util.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "Pandora",
+    "locales" : true,
+    "localesFolder" : "locales"
+}

@@ -1,0 +1,9 @@
+{
+    "appName" : "iHeartRadio",
+    "folderName" : "i_heart_radio",
+    "files" : ["app.js", "constants.js", "generator.js", "model.js", "cache.js", "util.js"],
+    "productionFiles" : ["production.js"],
+    "mainClass" : "iHeartRadio",
+    "locales" : true,
+    "localesFolder" : "locales"
+}

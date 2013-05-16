@@ -23,6 +23,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 
@@ -32,7 +33,7 @@ import android.view.View;
  * 
  */
 public class TileView extends View {
-
+	private final String TAG = "TileView";
     /**
      * Parameters controlling the size of the tiles and their range within view.
      * Width/Height are in pixels, and Drawables will be scaled to fit to these
@@ -64,7 +65,7 @@ public class TileView extends View {
 
     public TileView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
+        Log.i(TAG, "-----------construct TileView-------003------");
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TileView);
 
         mTileSize = a.getInt(R.styleable.TileView_tileSize, 12);
@@ -74,7 +75,7 @@ public class TileView extends View {
 
     public TileView(Context context, AttributeSet attrs) {
         super(context, attrs);
-
+        Log.i(TAG, "-----------construct TileView-------002------");
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TileView);
 
         mTileSize = a.getInt(R.styleable.TileView_tileSize, 12);

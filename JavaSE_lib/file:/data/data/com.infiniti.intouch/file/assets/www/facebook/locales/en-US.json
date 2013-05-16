@@ -1,0 +1,45 @@
+{
+	"invalid_Account" : "The Facebook account is not yet linked with the current user or has been expired.",
+	"get_Data_Error" : "Can't get the data now, please try again later.",
+	"news_Feed" : "News Feed",
+	"status" : "Status",
+	"events" : "Events",
+	"nearby_Friends" : "Nearby Friends",
+	"friends" : "Friends",
+	"messages" : "Messages",
+	"check_In" : "Check-In",
+	"post_Confirm" : "Do you want to post: [post_message]?",
+	"check_In_Confirm" : "Do you want to check-in at [location]",
+	"not_Found_Notification" : "No information found ... Go back?",
+	"error_Notification": "Error has occured... Go back?",
+	"past_Events" : "Past Events",
+	"future_Events" : "Future Events",
+	"birthdays" : "Birthdays",
+	"ok" : "OK",
+	"yes" : "Yes",
+	"no" : "No",
+	"comment_Missing_error" : "Error occured. Couldn't find this comment. Please try again later.",
+	"months" : ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+	"week_Days" : ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+	"pm" : "pm",
+	"am" : "am",
+	"just_Now" : "just now",
+	"min_Ago" : "min. ago",
+	"hour_Ago" : "hours ago",
+	"at" : "at",
+	"preset_Comments" : [
+        "Pre-written comment text 1",
+        "Pre-written comment text 2",
+        "Pre-written comment text 3",
+        "Pre-written comment text 4",
+        "Pre-written comment text 5"
+	],
+	"preset_Status" : [
+        "Testing the new technology",
+        "I'm in the car",
+        "Heading home now!",
+        "Pre-written status1",
+        "Pre-written status2"
+	]
+	
+}

@@ -1,0 +1,24 @@
+Template J Update Request Definition
+
+0x0A 		Template ID = Template J
+0x00		Screen Type = no list
+0x01		Screen Component Number
+0x01		Setting Availability = settings
+[0A000801]
+
+-T01 Large Text Box-
+0x02 		type = scrollable text window
+0x00 		key ID = not selectable
+0x000C 		X position = 12
+0x0033 		Y position = 51
+0x01C8 		X size = 456
+0x008E 		Y size = 142
+[0200000C003301C8008E]
+
+-List Component Information-
+0x0000 		X position of list
+0x0000 		X size of list
+0x0000 		Y size of list
+
+MIP Template Update Request Payload
+[0A0008010200000C003301C8008E000000000000]
