@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, lumaqqMe</string>
+    <string name="app_name">lumaqqMe</string>
+<string name="lumaqq_button_submit_text">测试</string>
+</resources>
