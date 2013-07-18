@@ -50,7 +50,7 @@ public class SmartDownloadThread extends Thread {
 				int offset = 0;
 				print("Thread " + this.threadId + " start download from position "+ startPos);
 				RandomAccessFile threadfile = new RandomAccessFile(this.saveFile, "rwd");
-				threadfile.seek(startPos);
+				threadfile.seek(startPos);	// 从这个地方开始下载数据
 				while ((offset = inStream.read(buffer, 0, 1024)) != -1) {
 					threadfile.write(buffer, 0, offset);
 					downLength += offset;

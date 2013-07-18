@@ -21,9 +21,16 @@ public class SmartDownloadActivity extends Activity {
     private ProgressBar downloadbar;
     private EditText pathText;
     private TextView resultView;
+    
+    
+    /**
+     * 当Handler被创建会关联到创建它的当前线程的消息队列，该类用于往消息队列发送消息
+     * 消息队列中的消息由当前线程内部进行处理
+     */
+    
     private Handler handler = new Handler(){
 
-		@Override//��Ϣ
+		@Override
 		public void handleMessage(Message msg) {
 			switch (msg.what) {
 			case 1:
@@ -56,7 +63,9 @@ public class SmartDownloadActivity extends Activity {
         button.setOnClickListener(new View.OnClickListener() {			
 			@Override
 			public void onClick(View v) {
+				
 				String path = "http://www.baidu.com";
+//				String path = "https://rm.airbiquity.com/attachments/download/10002/OIL_LCN2Kai_Facebook_%231_20130704.xlsx";
 				if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
 					File dir = Environment.getExternalStorageDirectory();//�ļ�����Ŀ¼
 					download(path, dir);
@@ -66,7 +75,13 @@ public class SmartDownloadActivity extends Activity {
 			}
 		});
     }
-    //����UI�ؼ��ĸ���ֻ�������߳�(UI�߳�)��������ڷ�UI�̸߳���UI�ؼ������µĽ��ᷴӳ����Ļ�ϣ�ĳЩ�ؼ��������
+    
+    /**
+     * 主线程(UI线程)
+     * 对于显示控件的界面更新只是由UI线程负责，如果是在非UI线程更新控件的属性值，更新后的显示界面不会反映到屏幕上
+     * @param path
+     * @param savedir
+     */
     private void download(final String path, final File dir){
     	new Thread(new Runnable() {
 			@Override
@@ -81,7 +96,7 @@ public class SmartDownloadActivity extends Activity {
 							Message msg = new Message();
 							msg.what = 1;
 							msg.getData().putInt("size", size);							
-							handler.sendMessage(msg);
+							handler.sendMessage(msg); // 发送消息
 						}});
 				} catch (Exception e) {
 					Message msg = new Message();//��Ϣ��ʾ

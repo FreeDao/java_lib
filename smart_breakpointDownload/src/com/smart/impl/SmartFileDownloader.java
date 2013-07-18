@@ -44,7 +44,7 @@ public class SmartFileDownloader {
 		return threads.length;
 	}
 	/**
-	 * ��ȡ�ļ���С
+	 * 获取文件大小
 	 * @return
 	 */
 	public int getFileSize() {
@@ -57,11 +57,11 @@ public class SmartFileDownloader {
 	protected synchronized void append(int size) {
 		downloadSize += size;
 	}
-	/**
-	 * ����ָ���߳�������ص�λ��
-	 * @param threadId �߳�id
-	 * @param pos ������ص�λ��
-	 */
+	  /**
+     * 更新指定线程最后下载的位置
+     * @param threadId 线程id
+     * @param pos 最后下载的位置
+     */
 	protected void update(int threadId, int pos) {
 		this.data.put(threadId, pos);
 	}
@@ -71,12 +71,12 @@ public class SmartFileDownloader {
 	protected synchronized void saveLogFile() {
 		this.fileService.update(this.downloadUrl, this.data);
 	}
-	/**
-	 * �����ļ�������
-	 * @param downloadUrl ����·��
-	 * @param fileSaveDir �ļ�����Ŀ¼
-	 * @param threadNum �����߳���
-	 */
+	 /**
+     * 构建文件下载器
+     * @param downloadUrl 下载路径
+     * @param fileSaveDir 文件保存目录
+     * @param threadNum 下载线程数
+     */
 	public SmartFileDownloader(Context context, String downloadUrl, File fileSaveDir, int threadNum) {
 		try {
 			this.context = context;
@@ -142,11 +142,11 @@ public class SmartFileDownloader {
 	}
 	
 	/**
-	 *  开始下载文件
-	 * @param listener �������������ı仯,�����Ҫ�˽�ʵʱ���ص�����,��������Ϊnull
-	 * @return �������ļ���С
-	 * @throws Exception
-	 */
+     *  开始下载文件
+     * @param listener 监听下载数量的变化,如果不需要了解实时下载的数量,可以设置为null
+     * @return 已下载文件大小
+     * @throws Exception
+     */
 	public int download(SmartDownloadProgressListener listener) throws Exception{
 		try {
 			RandomAccessFile randOut = new RandomAccessFile(this.saveFile, "rw");
@@ -159,9 +159,9 @@ public class SmartFileDownloader {
 					this.data.put(i+1, 0);//初始化每条线程已下载数据长度为0
 				}
 			}
-			for (int i = 0; i < this.threads.length; i++) {
+			for (int i = 0; i < this.threads.length; i++) {// 开启线程进行下载
 				int downLength = this.data.get(i+1);
-				if(downLength < this.block && this.downloadSize<this.fileSize){ //���߳�δ�������ʱ,��������						
+				if(downLength < this.block && this.downloadSize<this.fileSize){ //判断线程是否已经完成下载,否则继续下载    		
 					this.threads[i] = new SmartDownloadThread(this, url, this.saveFile, this.block, this.data.get(i+1), i+1);
 					this.threads[i].setPriority(7);
 					this.threads[i].start();
@@ -170,21 +170,21 @@ public class SmartFileDownloader {
 				}
 			}
 			this.fileService.save(this.downloadUrl, this.data);
-			boolean notFinish = true;//����δ���
-			while (notFinish) {// ѭ���ж��Ƿ��������
+			boolean notFinish = true;//下载未完成
+			while (notFinish) {// 循环判断所有线程是否完成下载
 				Thread.sleep(900);
-				notFinish = false;//�ٶ��������
+				notFinish = false;////假定全部线程下载完成
 				for (int i = 0; i < this.threads.length; i++){
 					if (this.threads[i] != null && !this.threads[i].isFinish()) {
-						notFinish = true;//����û�����
-						if(this.threads[i].getDownLength() == -1){//�������ʧ��,����������
+						notFinish = true;////设置标志为下载没有完成
+						if(this.threads[i].getDownLength() == -1){//如果下载失败,再重新下载
 							this.threads[i] = new SmartDownloadThread(this, url, this.saveFile, this.block, this.data.get(i+1), i+1);
 							this.threads[i].setPriority(7);
 							this.threads[i].start();
 						}
 					}
 				}				
-				if(listener!=null) listener.onDownloadSize(this.downloadSize);
+				if(listener!=null) listener.onDownloadSize(this.downloadSize);//通知目前已经下载完成的数据长度
 			}
 			fileService.delete(this.downloadUrl);
 		} catch (Exception e) {
@@ -194,7 +194,7 @@ public class SmartFileDownloader {
 		return this.downloadSize;
 	}
 	/**
-	 * ��ȡHttp��Ӧͷ�ֶ�
+	 * 获取Http响应头字段
 	 * @param http
 	 * @return
 	 */
@@ -208,7 +208,7 @@ public class SmartFileDownloader {
 		return header;
 	}
 	/**
-	 * ��ӡHttpͷ�ֶ�
+	 * 打印Http头字段
 	 * @param http
 	 */
 	public static void printResponseHeader(HttpURLConnection http){
