@@ -2,7 +2,7 @@
 */gen
 *.metadata
 .metadata/
-
+.metadata/*
 
 *.pydevproject
 InfinitiInTouch/.settings
