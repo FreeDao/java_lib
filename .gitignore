@@ -3,7 +3,7 @@
 *.metadata
 .metadata/
 
-*.project
+
 *.pydevproject
 InfinitiInTouch/.settings
 HapJarable
