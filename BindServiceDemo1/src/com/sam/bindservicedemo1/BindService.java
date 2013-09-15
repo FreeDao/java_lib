@@ -16,12 +16,14 @@ public class BindService extends Service{
 	@Override
 	public IBinder onBind(Intent intent) {
 		// TODO Auto-generated method stub
+		Log.i(TAG, "IBinder---onBind()");
 		return myBinder;
 	}
 	
 	 public class MyBinder extends Binder{
 	        
 	        public BindService getService(){
+	        	Log.i(TAG, "BindService getService()");
 	            return BindService.this;
 	        }
 	    }

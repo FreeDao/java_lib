@@ -15,6 +15,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class BindActivity1 extends Activity {
+	private static final String TAG = "BindActivity";
 	private Button startBtn;
     private Button stopBtn;
     private boolean flag;
@@ -68,6 +69,7 @@ public class BindActivity1 extends Activity {
 		
 		@Override
 		public void onServiceConnected(ComponentName name, IBinder service) {
+			Log.i("", "--------------------------2  service conneted------------------");
 			MyBinder binder = (MyBinder)service;
             BindService bindService = binder.getService();
             bindService.MyMethod();
