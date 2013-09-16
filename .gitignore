@@ -2,6 +2,7 @@
 */gen
 *.metadata
 .metadata/
+.metadata/*
 
 *.project
 *.pydevproject
