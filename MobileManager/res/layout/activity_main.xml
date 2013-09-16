@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+     >
+
+    <Button
+         style="@style/ButtonTheme"
+        android:id="@+id/buttonMobileInfo"
+        android:text="Mobile Info" />
+
+    <Button
+         style="@style/ButtonTheme"
+        android:id="@+id/buttonSoftMgr"
+        android:layout_toRightOf="@+id/buttonMobileInfo"
+        android:text="Software Manager" />
+
+    <Button
+         style="@style/ButtonTheme"
+        android:id="@+id/buttonDeviceInfo"
+        android:text="DeviceInfo" />
+
+</LinearLayout>

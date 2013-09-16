@@ -1,0 +1,15 @@
+package com.sam.qiyi.channel;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class ChannelActivity extends Activity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+	}
+	
+
+}
