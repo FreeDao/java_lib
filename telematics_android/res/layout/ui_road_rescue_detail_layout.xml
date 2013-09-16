@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/request_rescue_time_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/request_rescue_time" />
+
+        <TextView
+            android:id="@+id/request_rescue_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/request_rescue_time_toast"
+            android:layout_toRightOf="@+id/request_rescue_time_toast"
+            android:text="2012-06-06 12:00" />
+
+        <TextView
+            android:id="@+id/arrive_time_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/request_rescue_time_toast"
+            android:layout_below="@+id/request_rescue_time_toast"
+            android:text="@string/arrive_time" />
+
+        <TextView
+            android:id="@+id/arrive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/arrive_time_toast"
+            android:layout_toRightOf="@+id/arrive_time_toast"
+            android:text="2012-06-06 12:30" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/address_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/address_toast"
+            android:layout_toRightOf="@+id/address_toast"
+            android:text="2012-06-06 12:00" />
+
+        <TextView
+            android:id="@+id/longitude_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/address_toast"
+            android:layout_below="@+id/address_toast"
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/longitude_toast"
+            android:layout_toRightOf="@+id/longitude_toast"
+            android:text="12.345678" />
+
+        <TextView
+            android:id="@+id/latitude_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/longitude_toast"
+            android:layout_toRightOf="@+id/longitude"
+            android:layout_marginLeft="5dp"
+            android:text="@string/latitude" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/longitude_toast"
+            android:layout_toRightOf="@+id/latitude_toast"
+            android:text="36.039521" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/rescuer_name_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/rescuer_name" />
+
+        <TextView
+            android:id="@+id/rescuer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rescuer_name_toast"
+            android:layout_toRightOf="@+id/rescuer_name_toast"
+            android:text="高德先生" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:id="@+id/valuation_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:text="@string/valuation" />
+        <RatingBar
+            android:id="@+id/valuation"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/valuation_toast"
+            android:max="5"
+            android:numStars="5"
+            android:rating="3" />
+    </RelativeLayout>
+
+</LinearLayout>

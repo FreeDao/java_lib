@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#999999"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dateLine"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:background="@drawable/weather_freshbar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/weather_line"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp" >
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/violation_item_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/violation_item_blue"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/dateOfMonthText"
+                android:layout_width="40dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/calendar"
+                android:gravity="center"
+                android:text="21"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maintainDateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间：2012-12-12"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mainTainMileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保养里程：10000km"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/mainTainContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="保养内容：维修发动机"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detailBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/violation_detail" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

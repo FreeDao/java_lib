@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="48dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/violation_detail_background"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/detail_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/login_btn_background"
+                android:text="@string/state_detail_title"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+			<include layout="@layout/ui_divider_line_layout" />
+            <TextView
+                android:id="@+id/licenseText"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <include layout="@layout/ui_divider_line_layout" />
+
+            <TextView
+                android:id="@+id/faultLevelText"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <include layout="@layout/ui_divider_line_layout" />
+
+            <TextView
+                android:id="@+id/faultPositionText"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <include layout="@layout/ui_divider_line_layout" />
+
+            <TextView
+                android:id="@+id/faultDescriptionText"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black" />
+
+            <include layout="@layout/ui_divider_line_layout" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/suggestion"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/suggestionText"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp" >
+
+        <include layout="@layout/ui_title_bar_layout" />
+    </LinearLayout>
+
+</FrameLayout>

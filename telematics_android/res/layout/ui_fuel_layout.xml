@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/home_bg"
+        android:orientation="vertical"
+        android:paddingTop="48dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/diagnose_topbg"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/consumeText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/remainText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:layout_width="292dp"
+                android:layout_height="212dp"
+                android:layout_gravity="center"
+                android:background="@drawable/dial" />
+            <ImageView
+                android:id="@+id/pointerImage"
+                android:layout_width="186dp"
+                android:layout_height="186dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="42dp"
+                android:background="@drawable/pointer" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/ui_title_bar_layout" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingTop="38dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#989898"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/maintainDateText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="保养时间：2012-1-1" />
+
+            <TextView
+                android:id="@+id/maintainMileText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="保养里程：10000km" />
+
+            <TextView
+                android:id="@+id/maintainContentText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="保养内容：发动机" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#696969"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="地址：" />
+
+            <TextView
+                android:id="@+id/maintainAddressText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="大明路卡子门大街168号" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#878787"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="备注：" />
+
+            <TextView
+                android:id="@+id/maintainNoteText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="无" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp" >
+
+        <include layout="@layout/ui_title_bar_layout" />
+    </LinearLayout>
+
+    <include layout="@layout/ui_fling_foot_layout" />
+
+</FrameLayout>

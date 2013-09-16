@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ui_title_bar_layout" />
+
+    <RelativeLayout
+        style="@style/violation_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/violation_gridding_bg" >
+
+        <ImageView
+            android:id="@+id/vehicle_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/violation_sample_car" />
+
+        <TextView
+            android:id="@+id/vehicle_number_toast"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/vehicle_icon"
+            android:text="@string/vehicle_number" />
+
+        <TextView
+            android:id="@+id/vehicle_number"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/vehicle_number_toast"
+            android:text="京NEB810" />
+
+        <TextView
+            android:id="@+id/violation_times_toast"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/vehicle_icon"
+            android:text="@string/violation_times" />
+
+        <TextView
+            android:id="@+id/violation_times"
+            style="@style/violation_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/default_violation_times"
+            android:layout_toRightOf="@+id/violation_times_toast" />
+
+        <TextView
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/violation_times"
+            android:text="@string/times" />
+
+        <TextView
+            android:id="@+id/start_date_toast"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/violation_times_toast"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/vehicle_icon"
+            android:text="@string/start_date" />
+
+        <TextView
+            android:id="@+id/start_date"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/start_date_toast"
+            android:layout_marginLeft="5dp"
+            android:cursorVisible="true"
+            android:layout_toRightOf="@+id/start_date_toast"
+            android:text="2012-01-01" />
+
+        <TextView
+            android:id="@+id/deadline_toast"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/start_date_toast"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/start_date"
+            android:text="@string/deadline" />
+
+        <TextView
+            android:id="@+id/deadline"
+            style="@style/violation_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/start_date_toast"
+            android:layout_marginLeft="5dp"
+            android:cursorVisible="true"
+            android:layout_toRightOf="@+id/deadline_toast"
+            android:text="2012-06-30" />
+
+        <ImageView
+            android:id="@+id/select_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/start_date_toast"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/deadline"
+            android:src="@drawable/violation_select_year" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/violation_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

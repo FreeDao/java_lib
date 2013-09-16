@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="button_unpress">#eeeeee</color>
+	<color name="button_press">#888888</color>
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	<color name="gray">#969696</color>
+	<color name="yello">#FFF200</color>
+	<color name="milkwhite">#E0E5E5</color>
+	<color name="transfer">#00000000</color>
+</resources>

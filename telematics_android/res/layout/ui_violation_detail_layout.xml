@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/ui_title_bar_layout" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/violation_detail_background" >
+
+            <Button
+                android:id="@+id/detail_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/login_btn_background"
+                android:text="@string/violation_detail"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bassline_one"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/detail_btn"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/vehicle_licence_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_one"
+                android:layout_marginLeft="10dp"
+                android:text="@string/vehicle_license"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/vehicle_licence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/vehicle_licence_toast"
+                android:layout_toRightOf="@+id/vehicle_licence_toast"
+                android:text="苏 AX08826"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bassline_two"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/vehicle_licence_toast"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/time_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_two"
+                android:layout_marginLeft="10dp"
+                android:text="@string/time"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/time_toast"
+                android:layout_toRightOf="@+id/time_toast"
+                android:text="2012年  06月  31号  下午  15:32"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bassline_three"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/time_toast"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/address_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_three"
+                android:layout_marginLeft="10dp"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/address_toast"
+                android:layout_toRightOf="@+id/address_toast"
+                android:text="江苏省  南京市  北京西路  赛虹高架"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bassline_four"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/address"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/content_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_four"
+                android:layout_marginLeft="10dp"
+                android:text="@string/content"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/summary_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/content_toast"
+                android:layout_marginLeft="10dp"
+                android:text="@string/summary"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/summary_toast"
+                android:layout_toRightOf="@+id/summary_toast"
+                android:text="超速行驶"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/detail_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/summary_toast"
+                android:layout_marginLeft="10dp"
+                android:text="@string/detail"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/detail_toast"
+                android:layout_toRightOf="@+id/detail_toast"
+                android:text="芙蓉高速大道，超速20%芙蓉高速大道，超速20%芙蓉高速大道"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bassline_five"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/detail"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/punish_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_five"
+                android:layout_marginLeft="10dp"
+                android:text="@string/punish"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deductio_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/punish_toast"
+                android:layout_marginLeft="10dp"
+                android:text="@string/deductio"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deductio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/deductio_toast"
+                android:layout_toRightOf="@+id/deductio_toast"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/deductio"
+                android:layout_toRightOf="@+id/deductio"
+                android:text="@string/score"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fine_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/deductio_toast"
+                android:layout_marginLeft="10dp"
+                android:text="@string/fine"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/fine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fine_toast"
+                android:layout_toRightOf="@+id/fine_toast"
+                android:text="200"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fine"
+                android:layout_toRightOf="@+id/fine"
+                android:text="@string/yuan"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/bassline_six"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/fine_toast"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/state_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_six"
+                android:layout_marginLeft="10dp"
+                android:text="@string/state"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/state_toast"
+                android:layout_toRightOf="@+id/state_toast"
+                android:text="未处理"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/state_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/state"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/state"
+                android:src="@drawable/violation_treated" />
+
+            <View
+                android:id="@+id/bassline_seven"
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/state_toast"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/violation_detail_line" />
+
+            <TextView
+                android:id="@+id/last"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/bassline_seven"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableTop="@drawable/violation_detail_last_bg"
+                android:text="@string/last" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/bassline_seven"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableTop="@drawable/violation_detail_next_bg"
+                android:text="@string/next" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

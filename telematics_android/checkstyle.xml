@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.3//EN" "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+
+<!--
+    This configuration file was written by the eclipse-cs plugin configuration editor
+-->
+<!--
+    Checkstyle-Configuration: Hoperun-Check-Style
+    Description: Hoperun-Check-Style
+-->
+<module name="Checker">
+  <property name="severity" value="warning"/>
+  <module name="TreeWalker">
+    <module name="LineLength">
+      <property name="max" value="120"/>
+      <property name="tabWidth" value="4"/>
+    </module>
+    <module name="MethodLength"/>
+    <module name="ParameterNumber"/>
+    <module name="OuterTypeNumber"/>
+    <module name="ExecutableStatementCount">
+      <property name="max" value="80"/>
+      <property name="tokens" value="INSTANCE_INIT,STATIC_INIT,METHOD_DEF,CTOR_DEF"/>
+    </module>
+    <module name="UnusedImports"/>
+    <module name="RedundantImport"/>
+    <module name="IllegalImport"/>
+    <module name="AvoidStaticImport"/>
+    <module name="AvoidStarImport"/>
+    <module name="GenericWhitespace"/>
+    <module name="EmptyForInitializerPad">
+      <property name="option" value="space"/>
+    </module>
+    <module name="EmptyForIteratorPad">
+      <property name="option" value="space"/>
+    </module>
+    <module name="NoWhitespaceAfter"/>
+    <module name="NoWhitespaceBefore"/>
+    <module name="OperatorWrap"/>
+    <module name="MethodParamPad"/>
+    <module name="WhitespaceAfter"/>
+    <module name="WhitespaceAround"/>
+    <module name="ParenPad"/>
+    <module name="TypecastParenPad"/>
+    <module name="TypeName"/>
+    <module name="StaticVariableName"/>
+    <module name="AbstractClassName">
+      <property name="ignoreModifier" value="true"/>
+      <property name="ignoreName" value="true"/>
+    </module>
+    <module name="ClassTypeParameterName"/>
+    <module name="ConstantName"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="LocalVariableName"/>
+    <module name="MemberName"/>
+    <module name="MethodName"/>
+    <module name="MethodTypeParameterName"/>
+    <module name="PackageName"/>
+    <module name="ParameterName"/>
+    <module name="ModifierOrder"/>
+    <module name="RedundantModifier"/>
+    <module name="EmptyBlock"/>
+    <module name="AvoidNestedBlocks"/>
+    <module name="LeftCurly">
+      <property name="maxLineLength" value="120"/>
+    </module>
+    <module name="NeedBraces"/>
+    <module name="RightCurly"/>
+    <module name="CovariantEquals"/>
+    <module name="DefaultComesLast"/>
+    <module name="DoubleCheckedLocking"/>
+    <module name="EmptyStatement"/>
+    <module name="EqualsHashCode"/>
+    <module name="FallThrough"/>
+    <module name="HiddenField">
+      <property name="ignoreConstructorParameter" value="true"/>
+      <property name="ignoreSetter" value="true"/>
+      <property name="ignoreAbstractMethods" value="true"/>
+    </module>
+    <module name="InnerAssignment"/>
+    <module name="MagicNumber"/>
+    <module name="MissingSwitchDefault"/>
+    <module name="ModifiedControlVariable"/>
+    <module name="MultipleStringLiterals">
+      <property name="allowedDuplicates" value="2"/>
+    </module>
+    <module name="MultipleVariableDeclarations"/>
+    <module name="SuperClone"/>
+    <module name="OneStatementPerLine"/>
+    <module name="UnnecessaryParentheses"/>
+    <module name="SuperFinalize"/>
+    <module name="StringLiteralEquality"/>
+    <module name="SimplifyBooleanReturn"/>
+    <module name="SimplifyBooleanExpression"/>
+    <module name="ReturnCount"/>
+    <module name="ParameterAssignment"/>
+    <module name="PackageDeclaration"/>
+    <module name="NoFinalizer"/>
+    <module name="NoClone"/>
+    <module name="ArrayTypeStyle"/>
+    <module name="TodoComment"/>
+    <module name="UncommentedMain"/>
+    <module name="UpperEll"/>
+    <module name="OuterTypeFilename"/>
+    <module name="MissingOverride"/>
+    <module name="MissingDeprecated"/>
+  </module>
+  <module name="Translation"/>
+</module>
