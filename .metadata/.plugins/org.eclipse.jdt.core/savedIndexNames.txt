@@ -1,3 +1,0 @@
-INDEX VERSION 1.126+/home/sam/codes/work/java_lib/.metadata/.plugins/org.eclipse.jdt.core
-505706768.index
-1866971477.index
