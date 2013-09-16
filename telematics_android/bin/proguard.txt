@@ -1,0 +1,105 @@
+# view res/layout/ui_friend_detail_layout.xml #generated:89
+# view res/layout/ui_friend_search_result_layout.xml #generated:80
+# view res/layout/ui_location_layout.xml #generated:15
+# view res/layout/ui_map_layout.xml #generated:15
+# view res/layout/ui_poi_item_detail_layout.xml #generated:162
+# view res/layout/ui_poi_search_result_layout.xml #generated:87
+# view res/layout/ui_track_map_layout.xml #generated:15
+-keep class com.amap.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.hoperun.telematics.mobile.StartActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.hoperun.telematics.mobile.activity.AMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.hoperun.telematics.mobile.activity.CustomApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.hoperun.telematics.mobile.activity.FriendActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:164
+-keep class com.hoperun.telematics.mobile.activity.FriendDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:189
+-keep class com.hoperun.telematics.mobile.activity.FuelStateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.hoperun.telematics.mobile.activity.LocationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.hoperun.telematics.mobile.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class com.hoperun.telematics.mobile.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.hoperun.telematics.mobile.activity.MaintainHistoryDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.hoperun.telematics.mobile.activity.MaintenanceHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:177
+-keep class com.hoperun.telematics.mobile.activity.MaintenanceOrderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.hoperun.telematics.mobile.activity.PoiItemDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.hoperun.telematics.mobile.activity.PoiSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.hoperun.telematics.mobile.activity.PoiSearchResultActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.hoperun.telematics.mobile.activity.RemoteControlActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class com.hoperun.telematics.mobile.activity.RoadRescueActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.hoperun.telematics.mobile.activity.RoadRescueDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:123
+-keep class com.hoperun.telematics.mobile.activity.RoadRescueHistoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.hoperun.telematics.mobile.activity.ScoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.hoperun.telematics.mobile.activity.TrackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.hoperun.telematics.mobile.activity.VehicleStateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:99
+-keep class com.hoperun.telematics.mobile.activity.VehicleStateDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.hoperun.telematics.mobile.activity.ViolationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:93
+-keep class com.hoperun.telematics.mobile.activity.ViolationDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.hoperun.telematics.mobile.activity.WeatherActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.hoperun.telematics.mobile.framework.service.LocationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.hoperun.telematics.mobile.framework.service.NetworkService { <init>(...); }
+
+# view res/layout/ui_start_layout.xml #generated:17
+-keep class com.hoperun.telematics.mobile.view.ShaderView { <init>(...); }
+
+# onClick res/layout/ui_weather_layout.xml #generated:53
+-keepclassmembers class * { *** refresh(...); }
+
+# onClick res/layout/ui_vehicle_state_summary_layout.xml #generated:148
+-keepclassmembers class * { *** showDetail(...); }
+
+# onClick res/layout/ui_maintain_layout.xml #generated:70
+-keepclassmembers class * { *** startFilter(...); }
+

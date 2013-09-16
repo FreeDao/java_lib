@@ -1,14 +1,7 @@
 */bin
 */gen
-InfinitiInTouch/doc
 *.metadata
-InfinitiInTouch/hist.txt
-InfinitiInTouch/bin/jarlist.cache
-InfinitiInTouch/Test/httplib2
-InfinitiInTouch/Test/socks
-InfinitiInTouch/Test/tmp*.txt
-InfinitiInTouch/Test/*.zip
-InfinitiInTouch/proguard
+.metadata/
 
 *.project
 *.pydevproject
