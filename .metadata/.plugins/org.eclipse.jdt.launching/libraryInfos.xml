@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="/home/sam/software/jdk1.6.0_12/jre" version="1.6.0_12">
+<bootpath>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/resources.jar"/>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/rt.jar"/>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/sunrsasign.jar"/>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/jsse.jar"/>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/jce.jar"/>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/charsets.jar"/>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/ext"/>
+<entry path="/usr/java/packages/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/home/sam/software/jdk1.6.0_12/jre/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="/home/sam/software/jdk1.6.0_12" version="1.6.0_12">
 <bootpath>
 <entry path="/home/sam/software/jdk1.6.0_12/jre/lib/resources.jar"/>
